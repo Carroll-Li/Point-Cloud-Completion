@@ -79,18 +79,18 @@
 - **代码**: [https://github.com/hrzhou2/SeedFormer](https://github.com/hrzhou2/SeedFormer)
 - **简介**: 基于种子补丁和上采样Transformer的点云补全；先预测少量“种子”补丁，再用上采样Transformer逐步扩展到稠密点集，兼顾效率与质量。
 
+# 2023年
+
 ### [ProxyFormer: Proxy Alignment Assisted Point Cloud Completion with Missing Part Sensitive Transformer](https://arxiv.org/abs/2302.14435)
 - **作者**: Shanshan Zhao, Mingming Gong, Huan Fu, Dacheng Tao
 - **会议**: CVPR 2023
 - **简介**: 代理对齐辅助的缺失部分敏感Transformer；通过代理对齐在多尺度上融合可见与缺失区域的特征，并用对缺失部分更敏感的注意力机制聚焦难恢复区域，提升局部一致性与全局复原。
 
-### [AdaPoinTr: Diverse Point Cloud Completion with Adaptive Geometry-### [AdaPoinTr: Diverse Point Cloud Completion with Adaptive Geometry-Aware Transformers](https://arxiv.org/abs/2301.04545)
+### [AdaPoinTr: Diverse Point Cloud Completion with Adaptive Geometry-Aware Transformers](https://arxiv.org/abs/2301.04545)
 - **作者**: Xumin Yu, Yongming Rao, Ziyi Wang, Jiwen Lu, Jie Zhou
 - **期刊**: TPAMI 2023
 - **代码**: [https://github.com/yuxumin/PoinTr](https://github.com/yuxumin/PoinTr)
 - **简介**: 自适应几何感知Transformer的多样化点云补全；在PoinTr基础上引入自适应查询与几何先验融合策略，提升跨类别泛化与结果多样性。
-
-# 2023年
 
 ### [AnchorFormer: Point Cloud Completion from Discriminative Nodes](https://openaccess.thecvf.com/content/CVPR2023/papers/Chen_AnchorFormer_Point_Cloud_Completion_From_Discriminative_Nodes_CVPR_2023_paper.pdf)
 - **作者**: Shanshan Zhao, Mingming Gong, Huan Fu, Dacheng Tao
@@ -112,11 +112,16 @@
 - **简介**: 将Tri-plane表示融入Transformer，将三维几何投影到三个正交平面以高效建模长程依赖；在保持效率的同时提升几何完整性与边界细节。
 
 ### [PointAttN: You only need attention for point cloud completion](https://ojs.aaai.org/index.php/AAAI/article/view/28356)
-- **作者**: Yihan Wang, Xinyi Chen, Zhizhong Han
+- **作者**: Jun Wang, Ying Cui, Dongyan Guo, Junxia Li, Qingshan Liu, Chunhua Shen
 - **会议**: AAAI 2024 （arxiv上的为2022年版本）
 - **代码**: https://github.com/ohhhyeahhh/PointAttN
 - **简介**: 仅用注意力即可完成点云补全的范式；以多头注意力为核心进行全局-局部关系建模，结合坐标偏移预测实现从粗到细生成，结构简洁、性能强。
 
+### [T-CorresNet: Template Guided 3D Point Cloud Completion with Correspondence Pooling Query Generation Strategy](https://arxiv.org/abs/2407.05008v1)
+- **作者**: Fan Duan, Jiahao Yu, Li Chen
+- **会议**: ECCV 2024
+- **代码**: https://github.com/df-boy/T-CorresNet
+- **简介**: 模板引导的点云补全方法；先以球面模板生成粗完整模板，再通过对应池化（Corres-Pooling）从输入与模板的点对应关系中动态生成查询tokens，驱动Transformer解码器从粗到细补全缺失区域，兼顾全局结构一致性与局部细节恢复。
 # 2025年
 
 ### [PCDreamer: Point Cloud Completion Through Multi-view Diffusion Priors](https://cvpr.thecvf.com/virtual/2025/poster/35041)
